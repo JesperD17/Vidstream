@@ -1,0 +1,36 @@
+:root {
+	---logo-width: 200px;
+	--logo-height: 150px;
+}
+
+:root {
+	--firstcolor: gray;
+	--second-color: rgb(102, 101, 101);
+}
+
+body {
+	background-color: var(--firstcolor);
+}
+
+/* html, body {
+    height: 100%;
+    margin: 0;
+    border: solid black 10px;
+} */
+
+
+#logo {
+	
+}
+
+#header {
+	/* display: flex; */
+	background-color: var(--second-color);
+	height: 20%;
+}
+
+#navigation {
+    /* display: flex; */
+    flex-direction: row;
+	height: 10%;
+}
