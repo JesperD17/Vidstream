@@ -30,7 +30,7 @@ body {
 }
 
 #navigation {
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
 	height: 10%;
 }
