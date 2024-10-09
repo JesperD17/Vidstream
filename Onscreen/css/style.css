@@ -1,15 +1,14 @@
 :root {
-	---logo-width: 200px;
-	--logo-height: 150px;
-}
-
-:root {
-	--firstcolor: gray;
+	--first-color: gray;
 	--second-color: rgb(102, 101, 101);
+	--third-color: #505050;
+	--logo-width: min-content;
+	--logo-height: min-content;
 }
 
-body {
-	background-color: var(--firstcolor);
+body, html {
+	background-color: var(--first-color);
+	/* display: flex; */
 }
 
 /* html, body {
@@ -20,17 +19,38 @@ body {
 
 
 #logo {
-	
+	max-height: 100%; 
+	object-fit: contain; 
+}
+
+.links {
+    display: flex;
+	flex-direction: row;
 }
 
 #header {
-	/* display: flex; */
 	background-color: var(--second-color);
-	height: 20%;
+	height: var(--full-header-size);
 }
 
 #navigation {
-    display: flex;
-    flex-direction: row;
-	height: 10%;
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#search {
+	padding: 10px;
+	border-radius: 12px;
+	border: 3px solid var(--third-color);
+	background-color: var(--first-color);
+    position: relative;
+	right: 20px;
+}
+
+#search-field {
+	background-color: transparent;
+	border: transparent;
+	color: white;
 }
