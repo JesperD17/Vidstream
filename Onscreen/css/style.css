@@ -1,6 +1,6 @@
 :root {
-	--first-color: gray;
-	--second-color: rgb(102, 101, 101);
+	--first-color: #1b1b1b;
+	--second-color: rgb(0 0 0);
 	--third-color: #505050;
 	--logo-width: min-content;
 	--logo-height: min-content;
@@ -17,6 +17,9 @@ body, html {
     border: solid black 10px;
 } */
 
+#shell {
+	color: white;
+}
 
 #logo {
 	max-height: 100%; 
