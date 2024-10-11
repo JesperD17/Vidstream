@@ -30,16 +30,23 @@ body, html {
 }
 
 .links {
-    display: flex;
-	flex-direction: row;
-	position: absolute;
-
-	width: 600px;
+	width: fit-content;
     position: absolute;
+	gap: 20px;
     left: 0;
     right: 0;
     margin: auto;
 	display: flex;
+	height: var(--nav-height);
+	align-items: center;
+	color: white;
+	background: #141313;
+}
+
+.links a:visited, .links a {
+	color: white;
+	text-decoration: none;
+	
 }
 
 #header {
@@ -64,6 +71,8 @@ body, html {
 	padding: 0;
 	width: var(--search-field-width);
     height: var(--search-field-height);
+	flex-direction: row-reverse;
+    display: flex;
 }
 
 #search:hover {
@@ -83,6 +92,16 @@ body, html {
     height: var(--search-field-height);
 	color: white;
 	padding: 0 var(--padding-search-text);
+    position: absolute;
+}
+
+#search-field::placeholder {
+	color: white;
+}
+
+i.bx.bx-search.bx-tada {
+    align-self: center;
+    right: 10px;
     position: absolute;
 }
 
