@@ -3,6 +3,7 @@
 	--second-color: rgb(0 0 0);
 	--third-color: #505050;
 	--fourth-color: rgb(230, 230, 230);
+	--fifth-color: #141313;
 	--logo-width: min-content;
 	--logo-height: min-content;
 	--nav-height: 100px;
@@ -32,7 +33,7 @@ body, html {
 .links {
 	width: fit-content;
     position: absolute;
-	gap: 20px;
+	/* gap: 20px; */
     left: 0;
     right: 0;
     margin: auto;
@@ -40,13 +41,20 @@ body, html {
 	height: var(--nav-height);
 	align-items: center;
 	color: white;
-	background: #141313;
+	background: var(--fifth-color);
 }
 
 .links a:visited, .links a {
 	color: white;
 	text-decoration: none;
 	
+}
+
+.links a {
+    padding: 23px 20px;
+    border: 2px solid black;
+    line-height: 50px;
+	border-radius: 10px;
 }
 
 #header {
@@ -108,5 +116,45 @@ i.bx.bx-search.bx-tada {
 @media (max-width: 767px) {
 	.links {
 		display: none;
+	}
+}
+
+@media (max-width: 1784px) {
+	.links {
+		right: 15%;
+	}
+}
+
+@media (max-width: 1548px) {
+	.links {
+		right: 25%;
+	}	
+}
+
+@media  (max-width: 1422px) {
+	.links {
+		details {
+			user-select: none;
+		  }
+		  
+		  details>summary span.icon {
+			width: 24px;
+			height: 24px;
+			transition: all 0.3s;
+			margin-left: auto;
+		  }
+		  
+		  details[open] summary span.icon {
+			transform: rotate(180deg);
+		  }
+		  
+		  summary {
+			display: flex;
+			cursor: pointer;
+		  }
+		  
+		  summary::-webkit-details-marker {
+			display: none;
+		  }
 	}
 }
