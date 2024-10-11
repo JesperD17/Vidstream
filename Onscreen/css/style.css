@@ -6,9 +6,13 @@
 	--logo-width: min-content;
 	--logo-height: min-content;
 	--nav-height: 100px;
-	--search-field-width: 500px !important;
-	--search-field-height: 50px !important;
+	--search-field-width: 500px;
+	--search-field-height: 50px;
 	--search-field-border-radius: 30px;
+
+	--padding-search-text: 20px;
+	--padding-search-right: calc(var(--search-field-width) - var(--padding-search-text));
+
 }
 
 body, html {
@@ -75,13 +79,12 @@ body, html {
 	background-color: transparent;
 	border: transparent;
 	font-family: fantasy;
-	width: var(--search-field-width);
+	width: calc(var(--padding-search-right) - 20px);
     height: var(--search-field-height);
 	color: white;
-	padding: 0;
+	padding: 0 var(--padding-search-text);
     position: absolute;
 }
-
 
 @media (max-width: 767px) {
 	.links {
