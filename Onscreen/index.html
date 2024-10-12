@@ -5,7 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="./js/script.js"></script>
+<script src="./js/load_in_API.js"></script>
+<script src="./js/icon_change.js"></script>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
 </head>
@@ -33,7 +34,9 @@
                 <i id="searchIcon1" class='bx bx-search bx-tada'></i>
             </div>
             <button><i id="searchIcon2" class='bx bx-search bx-tada'></i></button>
-            <button><i id="collapsible_content1" class='bx bx-align-right'></i></button>
+            <button onclick="collapsibleContent1(this)">
+              <i id="collapsible_content" class='bx bx-align-right'></i>
+          </button> 
           </div>  
         </div>
 </div>
@@ -136,3 +139,7 @@
 <!-- END PAGE SOURCE -->
 </body>
 </html>
+
+<script>
+  
+</script>

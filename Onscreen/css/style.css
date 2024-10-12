@@ -119,6 +119,7 @@ i.bx.bx-search.bx-tada {
     right: 27px;
     position: absolute;
 	font-size: 27px;
+	display: contents;
 }
 
 .full_search_bar {
@@ -138,6 +139,15 @@ button {
 	color: white;
 	border: solid var(--second-color);
 	text-decoration: none;
+	font-size: 48px;
+}
+
+::before {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    right: 10px;
+    position: relative;
 }
 
 button:active {
@@ -164,8 +174,12 @@ button:active {
 		display: none;
 	}
 
-	#collapsible_content1 {
-		display: contents !important;
+	#collapsible_content {
+		display: block !important;
+	}
+	
+	#collapsible_content.visible {
+		display: none !important; 
 	}
 
 	.full_search_bar {
