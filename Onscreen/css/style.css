@@ -31,17 +31,9 @@ body, html {
 }
 
 .links {
-	width: fit-content;
-    position: absolute;
-	/* gap: 20px; */
-    left: 0;
-    right: 0;
-    margin: auto;
-	display: flex;
-	height: var(--nav-height);
-	align-items: center;
-	color: white;
-	background: var(--fifth-color);
+    display: flex;
+    align-items: center;
+    
 }
 
 .links a:visited, .links a {
@@ -53,6 +45,7 @@ body, html {
 .links a {
     padding: 23px 20px;
     border: 2px solid black;
+	background: var(--fifth-color);
     line-height: 50px;
 	border-radius: 10px;
 }
@@ -78,24 +71,22 @@ summary {
 }
 
 #navigation {
-	display: flex;
-	height: var(--nav-height);
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
+    display: flex;
+    justify-content: space-between; /* Ensures space between links and search */
+    align-items: center;
+    height: var(--nav-height);
+    position: relative;
 }
 
 #search {
-	border-radius: var(--search-field-border-radius);
-	border: 3px solid var(--third-color);
-	background-color: var(--first-color);
-    position: absolute;
-	right: 20px;
-	padding: 0;
-	width: var(--search-field-width);
+    border-radius: var(--search-field-border-radius);
+    border: 3px solid var(--third-color);
+    background-color: var(--first-color);
+    padding: 0;
+    width: var(--search-field-width);
     height: var(--search-field-height);
-	flex-direction: row-reverse;
     display: flex;
+    justify-content: flex-end; /* Aligns search icon inside */
 }
 
 #search:hover {
@@ -126,29 +117,23 @@ i.bx.bx-search.bx-tada {
     align-self: center;
     right: 10px;
     position: absolute;
+	font-size: 27px;
 }
 
-@media (max-width: 767px) {
-	.links {
-		display: none;
-	}
+.alignment {
+    flex-direction: row;
+    display: flex;
+	align-items: center;
 }
 
-@media (max-width: 1784px) {
-	.links {
-		right: 15%;
-	}
+i {
+	cursor: pointer
 }
-
-@media (max-width: 1548px) {
-	.links {
-		right: 25%;
-	}	
-}
-
 @media  (max-width: 1422px) {
 	.links {
 		background: transparent;
+		width: auto;
+    	flex-direction: row-reverse;	
 	}
 
 	.links a {
@@ -158,4 +143,15 @@ i.bx.bx-search.bx-tada {
 	i.bx.bx-align-right {
 		display: list-item !important;
 	}
+}
+
+@media (min-width: 1422px) {
+	.alignment {
+		width: 88%;
+    	justify-content: space-between;
+	}
+}
+
+@media (max-width: 700px) {
+
 }
