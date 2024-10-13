@@ -122,6 +122,10 @@ i.bx.bx-search.bx-tada {
 	display: contents;
 }
 
+i#collapsible_content {
+    display: none;
+}
+
 .full_search_bar {
     flex-direction: row;
     display: flex;
