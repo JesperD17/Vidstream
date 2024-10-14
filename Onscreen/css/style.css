@@ -43,7 +43,7 @@ body, html {
 	
 }
 
-.links a {
+.links a, .links2 a {
     padding: 23px 20px;
     border: 2px solid black;
 	background: var(--fifth-color);
@@ -122,9 +122,9 @@ i.bx.bx-search.bx-tada {
 	display: contents;
 }
 
-i#collapsible_content {
+/* i#collapsible_content {
     display: none;
-}
+} */
 
 .full_search_bar {
     flex-direction: row;
@@ -144,6 +144,8 @@ button {
 	border: solid var(--second-color);
 	text-decoration: none;
 	font-size: 48px;
+	width: 40px;
+    height: 53px;
 }
 
 ::before {
@@ -167,7 +169,13 @@ button:active {
 	display: none;
 }
 
-@media  (max-width: 1422px) {
+.FAQ {
+	display: none;
+}
+
+
+
+@media  (max-width: 1438px) {
 	.links {
 		background: transparent;
 		width: auto;
@@ -178,17 +186,28 @@ button:active {
 		display: none;
 	}
 
-	#collapsible_content {
-		display: block !important;
-	}
-	
-	#collapsible_content.visible {
-		display: none !important; 
+	.full_search_bar {
+		width: 88%;
+    	justify-content: flex-start;
+		gap: 15px;
 	}
 
-	.full_search_bar {
-		/* width: 88%; */
-    	justify-content: flex-end;
+	.FAQ {
+		display: block !important;
+	}
+
+	button.hidebtn {
+		display: none;
+	}
+
+	summary {
+		position: absolute;
+		width: max-content;
+	}
+
+	.links2 {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -200,6 +219,11 @@ button:active {
 	#searchIcon2 {
 		display:contents;
 		font-size: 48px;
+	}
+
+	
+	button.hidebtn {
+		display: block !important;
 	}
 }
 

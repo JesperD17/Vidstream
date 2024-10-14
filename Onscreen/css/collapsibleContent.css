@@ -2,6 +2,12 @@
     vertical-align: top; 
     height:auto !important; 
 }
+
+/* .FAQ2 { 
+    vertical-align: top; 
+    height:auto !important; 
+} */
+
 .list {
     display:none; 
     height:auto;
@@ -23,18 +29,12 @@
 
 /*style the (+) and (-) */
 .hide, .show {
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    background: #cccbbb;
     margin-right: 0;
     float: left;
 }
 
 .hide:hover, .show:hover {
-    color: #eee;
+    color: #eee; 
     text-shadow: 0 0 1px #666;
     text-decoration: none;
     box-shadow: 0 0 4px #222 inset;
