@@ -1,7 +1,10 @@
 var links = document.querySelector(".search");
+var content = document.querySelector(".content")
 let clickCounter = 0;
     let input = links.querySelector('.icon'); 
     let div = links.querySelector('.search-bar'); 
+    let input2 = content.querySelector('.icon')
+    let div2 = content.querySelector(".collapsible-bar")
 
     input.addEventListener("click", function() {
         div.classList.toggle('hiden')
@@ -15,6 +18,22 @@ let clickCounter = 0;
             input.classList.add('bx-search')
         }
     })
+
+    input2.addEventListener("click", function() {
+        div2.classList.toggle('hiden')
+        if(input2.classList.contains('bx-align-right')) {
+            input2.classList.remove('bx-align-right')
+            input2.classList.add('bx-align-middle')
+        }
+        else {
+            input2.classList.remove('bx-align-middle')
+            input2.classList.add('bx-align-right')
+        }
+    })
+
+
+
+
 
 //   links.forEach(function(div) { // voor elke class die .links a heeft
 //       div.style.cssText = 'display:block !important';

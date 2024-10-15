@@ -172,8 +172,6 @@ i {
 	display: none;
 }
 
-
-
 @media  (max-width: 1438px) {
 	.links {
 		background: transparent;
@@ -187,9 +185,9 @@ i {
 
 	.full_search_bar {
 		width: 88%;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         gap: 15px;
-        flex-direction: row;
+        /* flex-direction: row; */
 		
 	}
 
