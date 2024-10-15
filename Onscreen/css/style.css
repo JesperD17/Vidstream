@@ -51,16 +51,6 @@ body, html {
 	border-radius: 10px;
 }
 
-i#collapsible_content1 {
-    display: none;
-	font-size: 48px;
-}
-
-summary {
-	display: flex;
-    align-items: center;
-}
-
 ::marker {
     display: none;
     color: transparent;
@@ -79,7 +69,7 @@ summary {
     position: relative;
 }
 
-#search {
+/* #search {
     border-radius: var(--search-field-border-radius);
     border: 3px solid var(--third-color);
     background-color: var(--first-color);
@@ -87,8 +77,8 @@ summary {
     width: var(--search-field-width);
     height: var(--search-field-height);
     display: flex;
-    justify-content: flex-end; /* Aligns search icon inside */
-}
+    justify-content: flex-end; Aligns search icon inside
+} */
 
 #search:hover {
 	border: 3px solid var(--fourth-color);
@@ -101,25 +91,30 @@ summary {
 #search-field {
 	border-radius: var(--search-field-border-radius);
 	background-color: transparent;
-	border: transparent;
+	/* border: transparent; */
 	font-family: fantasy;
 	width: calc(var(--padding-search-right) - 20px);
     height: var(--search-field-height);
 	color: white;
 	padding: 0 var(--padding-search-text);
-    position: absolute;
+    position: relative;
 }
 
 #search-field::placeholder {
 	color: white;
 }
 
-i.bx.bx-search.bx-tada {
-    align-self: center;
+#searchIcon {
+    align-self: center; 
     right: 27px;
     position: absolute;
 	font-size: 27px;
-	display: contents;
+	display: flex;
+}
+
+.search {
+	display: flex;
+    align-items: center;
 }
 
 /* i#collapsible_content {
@@ -137,7 +132,7 @@ i {
 	cursor: pointer
 }
 
-button {
+/* button {
 	padding: 0;
 	background: transparent;
 	color: white;
@@ -146,28 +141,32 @@ button {
 	font-size: 48px;
 	width: 40px;
     height: 53px;
-}
+} */
 
-::before {
+/* ::before {
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     display: flex;
     right: 10px;
     position: relative;
-}
+} */
 
-button:active {
+/* button:active {
     color: var(--sixth-color);
-}
+} */
 
-button:active {
+/* button:active {
 	background-color: transparent;
-	/* border-radius: 100px; */
-}
+	border-radius: 100px;
+} */
 
-#searchIcon2 {
-	display: none;
-}
+/* #searchIcon2 {
+    align-self: center;
+    right: 27px;
+    position: absolute;
+	font-size: 27px;
+	display: contents;
+} */
 
 .FAQ {
 	display: none;
@@ -217,13 +216,16 @@ button:active {
 	}
 
 	#searchIcon2 {
-		display:contents;
 		font-size: 48px;
 	}
 
-	
-	button.hidebtn {
-		display: block !important;
+	.search-bar {
+		flex-direction: row-reverse;
+		display: flex;
 	}
+	
+	/* button.hidebtn {
+		display: block !important;
+	} */
 }
 

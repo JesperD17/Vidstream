@@ -1,48 +1,14 @@
-.FAQ { 
-    vertical-align: top; 
-    height:auto !important; 
-}
 
-/* .FAQ2 { 
-    vertical-align: top; 
-    height:auto !important; 
-} */
 
-.list {
-    display:none; 
-    height:auto;
-    margin:0;
-    float: left;
-}
-.show {
-    display: none; 
-}
-.hide:target + .show {
-    display: inline; 
-}
-.hide:target {
-    display: none; 
-}
-.hide:target ~ .list {
-    display:inline; 
-}
 
-/*style the (+) and (-) */
-.hide, .show {
-    margin-right: 0;
-    float: left;
-}
 
-.hide:hover, .show:hover {
-    color: #eee; 
-    text-shadow: 0 0 1px #666;
-    text-decoration: none;
-    box-shadow: 0 0 4px #222 inset;
-    opacity: 1;
-    margin-bottom: 25px;
-}
+@media (max-width: 730px) {
 
-.list p{
-    height:auto;
-    margin:0;
+    .hiden {
+        display: none;
+    }
+    
+    .vis {
+        display: block;
+    }
 }
