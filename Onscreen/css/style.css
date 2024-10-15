@@ -187,8 +187,10 @@ i {
 
 	.full_search_bar {
 		width: 88%;
-    	justify-content: flex-start;
-		gap: 15px;
+        justify-content: space-around;
+        gap: 15px;
+        flex-direction: row;
+		
 	}
 
 	.FAQ {
