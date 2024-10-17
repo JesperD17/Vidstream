@@ -82,6 +82,7 @@ body, html {
 
 #search:hover {
 	border: 3px solid var(--fourth-color);
+	border-radius: 40px;
 }
 
 #search:active {
@@ -222,6 +223,8 @@ i {
 	.search-bar {
 		flex-direction: row-reverse;
 		display: flex;
+		top: 80px;
+        position: relative;
 	}
 	
 	/* button.hidebtn {

@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>MovieHunter</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="./css/collapsibleContent.css">
-  <script src="./js/load_in_API.js"></script>
-  <!-- <script src="./js/icon_change.js"></script> -->
-  <link href="./css/collapsibleContent.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+<title>MovieHunter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="./css/collapsibleContent.css">
+<script src="./js/load_in_API.js"></script>
+<!-- <script src="./js/icon_change.js"></script> -->
+ <link href="./css/collapsibleContent.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
 </head>
-
 <body>
-  <div id="shell">
-    <div id="header">
-      <div id="navigation">
+<div id="shell">
+  <div id="header">
+    <div id="navigation">
         <img id="logo" src="./pics/logo1.png">
 
         <summary>
-          <div class="links">
-            <span class="links_icon"></span>
-            <a class="active" href="#">HOME</a>
-            <a href="#">NEWS</a>
-            <a href="#">IN THEATERS</a>
-            <a href="#">COMING SOON</a>
-            <a href="#">CONTACT</a>
-            <a href="#">ADVERTISE</a>
-          </div>
+            <div class="links">
+                <span class="links_icon"></span>
+                <a class="active" href="#">HOME</a>
+                <a href="#">NEWS</a>
+                <a href="#">IN THEATERS</a>
+                <a href="#">COMING SOON</a>
+                <a href="#">CONTACT</a>
+                <a href="#">ADVERTISE</a>
+            </div>
         </summary>
 
 
 
-        <!-- collapsible searchbar -->
+
         <div class="full_search_bar">
 
-          <div class="search">
-            <i id="searchIcon" class='bx bx-search bx-tada icon'></i>
-            <div class="search-bar hiden">
-              <input type="text" name="search-field" placeholder="Zoeken..." id="search-field"
-                class="blink search-field" />
+            <div id="search">
+                <input type="text" name="search-field" placeholder="Zoeken..." id="search-field" class="blink search-field" />
+                  <i id="searchIcon1" class='bx bx-search bx-tada'></i>
             </div>
-          </div>
 
-          <!-- collapsible content -->
-          <div class="FAQ">
-            <div class="content">
-              <i id="collapsible_content" class='bx bx-align-right'></i>
+            <!-- <button class="hidebtn">
+              <i id="searchIcon2" class='bx bx-search bx-tada'></i>
+            </button> -->
 
-              <div class="collapsible-bar hiden">
-                <!-- <i id="collapsible_content" class='bx bx-align-middle'></i> -->
-                 aaa
-              </div>
+            <!-- <div class="FAQ2">
+              <a href="#hide2" class="hide" id="hide1">
+                <button>
+                  <i id="searchIcon2" class='bx bx-search bx-tada'></i>
+                </button>   
+              </a>
+            </div>
 
-              <!-- <div class="list">
+            <a href="#show2" class="show" id="show1">
+              <button>
+                <i id="collapsible_content2" class='bx bx-align-middle'></i>
+              </button>    
+            </a>
+
+            <div class="list2">
+              <p>
+aaa
+              </p>
+          </div> -->
+
+
+            <!-- collapsible content -->
+            <div class="FAQ">
+              <a href="#hide1" class="hide" id="hide1">
+                <button>
+                  <i id="collapsible_content" class='bx bx-align-right'></i>
+                </button>   
+              </a>
+
+              <a href="#show1" class="show" id="show1">
+                <button>
+                  <i id="collapsible_content" class='bx bx-align-middle'></i>
+                </button>    
+              </a>
+
+                  <div class="list">
                       <p>
                         <summary>
                           <div class="links2">
@@ -70,126 +94,111 @@
                       </summary>
                       a
                       </p>
-                  </div> -->
+                  </div>
             </div>
-          </div>
+          </div>  
         </div>
-      </div>
-    </div>
+</div>
 
-    <div id="main">
-      <div id="content">
-        <div class="box">
-          <div class="head">
-            <h2>LATEST TRAILERS</h2>
-            <p class="text-right"><a href="#">See all</a></p>
-          </div>
-          <div class="movie">
-            <div class="movie-banner"> <span class="play"><span class="name">X-MAN</span></span> <a href="#"><img
-                  src="css/images/movie1.jpg" alt="" /></a> </div>
-            <div class="rating">
-              <p>RATING</p>
-              <div class="stars">
-                <div class="stars-in"> </div>
-              </div>
-              <span class="comments">12</span>
-            </div>
-          </div>
-
-          <div class="cl">&nbsp;</div>
-        </div>
-        <div class="box">
-          <div class="head">
-            <h2>TOP RATED</h2>
-            <p class="text-right"><a href="#">See all</a></p>
-          </div>
-          <div class="movie">
-            <div class="movie-banner"> <span class="play"><span class="name">TRANSFORMERS</span></span> <a href="#"><img
-                  src="css/images/movie7.jpg" alt="" /></a> </div>
-            <div class="rating">
-              <p>RATING</p>
-              <div class="stars">
-                <div class="stars-in"> </div>
-              </div>
-              <span class="comments">12</span>
-            </div>
-          </div>
-
-          <div class="cl">&nbsp;</div>
-        </div>
-        <div class="box">
-          <div class="head">
-            <h2>MOST COMMENTED</h2>
-            <p class="text-right"><a href="#">See all</a></p>
-          </div>
-          <div class="movie">
-            <div class="movie-banner"> <span class="play"><span class="name">HOUSE</span></span> <a href="#"><img
-                  src="css/images/movie13.jpg" alt="" /></a> </div>
-            <div class="rating">
-              <p>RATING</p>
-              <div class="stars">
-                <div class="stars-in"> </div>
-              </div>
-              <span class="comments">12</span>
-            </div>
-          </div>
-          <div class="cl">&nbsp;</div>
-        </div>
-
-      </div>
-      <div id="news">
+  <div id="main">
+    <div id="content">
+      <div class="box">
         <div class="head">
-          <h3>NEWS</h3>
+          <h2>LATEST TRAILERS</h2>
           <p class="text-right"><a href="#">See all</a></p>
         </div>
-        <div class="content">
-          <p class="date">12.04.09</p>
-          <h4>Disney's A Christmas Carol</h4>
-          <p>&quot;Disney's A Christmas Carol,&quot; a multi-sensory thrill ride re-envisioned by Academy
-            Award&reg;-winning filmmaker Robert Zemeckis, captures... </p>
-          <a href="#">Read more</a>
+        <div class="movie">
+          <div class="movie-banner"> <span class="play"><span class="name">X-MAN</span></span> <a href="#"><img src="css/images/movie1.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments">12</span> </div>
         </div>
-        <div class="content">
-          <p class="date">11.04.09</p>
-          <h4>Where the Wild Things Are</h4>
-          <p>Innovative director Spike Jonze collaborates with celebrated author Maurice Sendak to bring one of the most
-            beloved books of all time to the big screen in &quot;Where the Wild Things Are,&quot;...</p>
-          <a href="#">Read more</a>
-        </div>
-        <div class="content">
-          <p class="date">10.04.09</p>
-          <h4>The Box</h4>
-          <p>Norma and Arthur Lewis are a suburban couple with a young child who receive an anonymous gift bearing fatal
-            and irrevocable consequences.</p>
-          <a href="#">Read more</a>
-        </div>
+
+        <div class="cl">&nbsp;</div>
       </div>
-      <div id="coming">
+      <div class="box">
         <div class="head">
-          <h3>COMING SOON<strong>!</strong></h3>
+          <h2>TOP RATED</h2>
           <p class="text-right"><a href="#">See all</a></p>
         </div>
-        <div class="content">
-          <h4>The Princess and the Frog </h4>
-          <a href="#"><img src="css/images/coming-soon1.jpg" alt="" /></a>
-          <p>Walt Disney Animation Studios presents the musical &quot;The Princess and the Frog,&quot; an animated
-            comedy set in the great city of New Orleans...</p>
-          <a href="#">Read more</a>
+        <div class="movie">
+          <div class="movie-banner"> <span class="play"><span class="name">TRANSFORMERS</span></span> <a href="#"><img src="css/images/movie7.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments">12</span> </div>
+        </div>
+        
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>MOST COMMENTED</h2>
+          <p class="text-right"><a href="#">See all</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-banner"> <span class="play"><span class="name">HOUSE</span></span> <a href="#"><img src="css/images/movie13.jpg" alt="" /></a> </div>
+          <div class="rating">
+            <p>RATING</p>
+            <div class="stars">
+              <div class="stars-in"> </div>
+            </div>
+            <span class="comments">12</span> </div>
         </div>
         <div class="cl">&nbsp;</div>
-        <div class="content">
-          <h4>The Princess and the Frog </h4>
-          <a href="#"><img src="css/images/coming-soon2.jpg" alt="" /></a>
-          <p>Walt Disney Animation Studios presents the musical &quot;The Princess and the Frog,&quot; an animated
-            comedy set in the great city of New Orleans...</p>
-          <a href="#">Read more</a>
-        </div>
       </div>
-      <div class="cl">&nbsp;</div>
+
     </div>
+    <div id="news">
+      <div class="head">
+        <h3>NEWS</h3>
+        <p class="text-right"><a href="#">See all</a></p>
+      </div>
+      <div class="content">
+        <p class="date">12.04.09</p>
+        <h4>Disney's A Christmas Carol</h4>
+        <p>&quot;Disney's A Christmas Carol,&quot; a multi-sensory thrill ride re-envisioned by Academy Award&reg;-winning filmmaker Robert Zemeckis, captures... </p>
+        <a href="#">Read more</a> </div>
+      <div class="content">
+        <p class="date">11.04.09</p>
+        <h4>Where the Wild Things Are</h4>
+        <p>Innovative director Spike Jonze collaborates with celebrated author Maurice Sendak to bring one of the most beloved books of all time to the big screen in &quot;Where the Wild Things Are,&quot;...</p>
+        <a href="#">Read more</a> </div>
+      <div class="content">
+        <p class="date">10.04.09</p>
+        <h4>The Box</h4>
+        <p>Norma and Arthur Lewis are a suburban couple with a young child who receive an anonymous gift bearing fatal and irrevocable consequences.</p>
+        <a href="#">Read more</a> </div>
+    </div>
+    <div id="coming">
+      <div class="head">
+        <h3>COMING SOON<strong>!</strong></h3>
+        <p class="text-right"><a href="#">See all</a></p>
+      </div>
+      <div class="content">
+        <h4>The Princess and the Frog </h4>
+        <a href="#"><img src="css/images/coming-soon1.jpg" alt="" /></a>
+        <p>Walt Disney Animation Studios presents the musical &quot;The Princess and the Frog,&quot; an animated comedy set in the great city of New Orleans...</p>
+        <a href="#">Read more</a> </div>
+      <div class="cl">&nbsp;</div>
+      <div class="content">
+        <h4>The Princess and the Frog </h4>
+        <a href="#"><img src="css/images/coming-soon2.jpg" alt="" /></a>
+        <p>Walt Disney Animation Studios presents the musical &quot;The Princess and the Frog,&quot; an animated comedy set in the great city of New Orleans...</p>
+        <a href="#">Read more</a> </div>
+    </div>
+    <div class="cl">&nbsp;</div>
   </div>
-  <script src="./js/collapsibleContent.js"></script>
-
+</div>
+<!-- END PAGE SOURCE -->
 </body>
-
 </html>
+
+<script>
+  
+</script>
