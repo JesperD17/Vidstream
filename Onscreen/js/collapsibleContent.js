@@ -19,17 +19,17 @@ let clickCounter = 0;
         }
     })
 
-    input2.addEventListener("click", function() {
-        div2.classList.toggle('hiden')
-        if(input2.classList.contains('bx-align-right')) {
-            input2.classList.remove('bx-align-right')
-            input2.classList.add('bx-align-middle')
-        }
-        else {
-            input2.classList.remove('bx-align-middle')
-            input2.classList.add('bx-align-right')
-        }
-    })
+    // input2.addEventListener("click", function() {
+    //     div2.classList.toggle('hiden')
+    //     if(input2.classList.contains('bx-align-right')) {
+    //         input2.classList.remove('bx-align-right')
+    //         input2.classList.add('bx-align-middle')
+    //     }
+    //     else {
+    //         input2.classList.remove('bx-align-middle')
+    //         input2.classList.add('bx-align-right')
+    //     }
+    // })
 
 
 
