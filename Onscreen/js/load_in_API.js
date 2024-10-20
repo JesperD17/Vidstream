@@ -21,15 +21,17 @@
     
         movies.forEach(function (movie, index) {
             // Create a unique class for each movie, e.g., "movie-banner-1"
+            const cardClass = `Card-${index + 1}`;
             const bannerClass = `movie-banner-${index + 1}`;
     
             html += `
-
-            <div class="${bannerClass}">
-            <img src="${movie.banner}" alt="${movie.title} banner"/>
+            <div class="${cardClass}">
+                <div class="${bannerClass}">
+                    <img src="${movie.banner}" alt="${movie.title} banner"/>
+                </div>
+                <div class="titles">${index + 1}. ${movie.title}</div>
+                <div></div>
             </div>
-            <div>${index + 1}. ${movie.title}</div>
-            <div></div>
             `;
     
             console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
