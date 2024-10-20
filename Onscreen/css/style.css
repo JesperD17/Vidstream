@@ -26,7 +26,7 @@ body, html {
 	color: white;
 }
 
-#logo {
+#logo, #logo2 {
 	max-height: 100%; 
 	object-fit: contain; 
 }
@@ -106,6 +106,7 @@ body, html {
 	color: white;
 	padding: 0 var(--padding-search-text);
     position: relative;
+	display: block;
 }
 
 #search-field::placeholder {
@@ -124,16 +125,13 @@ body, html {
 	right: 21px;
     display: flex;
     position: absolute;
+	display: none;
 }
 
 .search {
 	display: flex;
     align-items: center;
 }
-
-/* i#collapsible_content {
-    display: none;
-} */
 
 .full_search_bar {
     flex-direction: row;
@@ -142,59 +140,52 @@ body, html {
 	flex-direction: row-reverse;
 }
 
+#IconNoClick {
+	position: absolute;
+    right: 21px;
+}
+
 i {
 	cursor: pointer
 }
-
-/* button {
-	padding: 0;
-	background: transparent;
-	color: white;
-	border: solid var(--second-color);
-	text-decoration: none;
-	font-size: 48px;
-	width: 40px;
-    height: 53px;
-} */
-
-/* ::before {
-    align-items: center;
-    justify-content: end;
-    display: flex;
-    right: 10px;
-    position: relative;
-} */
-
-/* button:active {
-    color: var(--sixth-color);
-} */
-
-/* button:active {
-	background-color: transparent;
-	border-radius: 100px;
-} */
-
-/* #searchIcon2 {
-    align-self: center;
-    right: 27px;
-    position: absolute;
-	font-size: 27px;
-	display: contents;
-} */
 
 .FAQ {
 	display: none;
 }
 
-@media  (max-width: 1438px) {
+.secondSummary {
+	display: none;
+}
+
+i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
+	display: none;
+}
+
+.alignBars {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+	justify-content: space-between;
+    width: 83%;
+}
+
+#logo2 {
+	display: none;
+}
+
+@media  (max-width: 1586px) {
 	.links {
 		background: transparent;
 		width: auto;
-    	flex-direction: row-reverse;	
+    	flex-direction: column;	
+		right: 100px;
+		position: relative;
 	}
 
 	.links a {
 		display: none;
+		/* padding: 23px; */
 	}
 
 	.full_search_bar {
@@ -222,18 +213,42 @@ i {
 		display: flex;
 		flex-direction: column;
 	}
+
+	i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
+		display: contents;
+		font-size: 35px;
+	}
+
+	a {
+		width: 120px;
+	}
+
+	.alignBars {
+		width: min-content;
+	}
+}
+
+@media (max-width: 900px) {
+	#logo {
+		display: none;
+	}
+
+	#logo2 {
+		display: block;
+	}
 }
 
 @media (max-width: 700px) {
 	#search-field {
 		display: none;
+		position: absolute;
+		right: 0px;
+		top: 89px;
 	}
 
 	#search {
-		border: none;
-	}
-
-
+		border: none !important;
+	} 
 	.search-bar {
 		flex-direction: row-reverse;
 		display: flex;
@@ -243,13 +258,21 @@ i {
 		color: transparent;
 		
 	}
-	
-	/* button.hidebtn {
-		display: block !important;
-	} */
 
-	/* .searchIcon1 {
-		display:inline-block !important;
-	} */
+	#searchIcon1 {
+		display: contents;
+	}
+
+	#IconNoClick {
+		display: none;
+	}
+
+	i {
+		font-size: 35px;
+	}
+	
+	#search-field {
+		width: 90%;
+	}
 }
 

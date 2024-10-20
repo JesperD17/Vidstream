@@ -2,13 +2,3 @@
 
 
 
-@media (max-width: 730px) {
-
-    .hiden {
-        display: none;
-    }
-    
-    .vis {
-        display: block;
-    }
-}
