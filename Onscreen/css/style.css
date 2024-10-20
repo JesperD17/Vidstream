@@ -49,6 +49,7 @@ body, html {
 	background: var(--fifth-color);
     line-height: 50px;
 	border-radius: 10px;
+	font-family: fantasy;
 }
 
 ::marker {
