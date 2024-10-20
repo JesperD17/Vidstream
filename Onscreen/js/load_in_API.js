@@ -15,18 +15,25 @@
             });
     }
     fStart();
-
+    
     function fShow(movies) {
         let html = "<h3>Hieronder komen de movies</h3>";
-
+    
         movies.forEach(function (movie, index) {
+            // Create a unique class for each movie, e.g., "movie-banner-1"
+            const bannerClass = `movie-banner-${index + 1}`;
+    
             html += `
-                <div>
-                    <h4>${index + 1} ${movie.title}</h4>
-                    <img src="${movie.banner}" alt="${movie.title} banner" style="width:100%;max-width:600px;"/>
-                </div>
+
+            <div class="${bannerClass}">
+            <img src="${movie.banner}" alt="${movie.title} banner"/>
+            </div>
+            <div>${index + 1}. ${movie.title}</div>
+            <div></div>
             `;
-            console.log(movie.title);
+    
+            console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
         });
-        document.getElementById("output").innerHTML += html;
+    
+        document.querySelector(".output").innerHTML += html;
     }
