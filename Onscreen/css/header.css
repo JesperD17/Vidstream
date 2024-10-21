@@ -20,9 +20,10 @@
 body, html {
 	background: var(--first-color);
 	margin: 0px;
+	font-family: fantasy;
 }
 
-#shell {
+div#shell {
 	color: white;
 }
 
@@ -44,7 +45,7 @@ body, html {
 }
 
 .links a, .links2 a {
-    padding: 23px 20px;
+    padding: 40px 20px 20px;
     border: 2px solid black;
 	background: var(--fifth-color);
     line-height: 50px;
@@ -87,10 +88,10 @@ body, html {
 
 #search-field:active,
 #search-field:focus {
-    outline: none; /* Removes the default outline */
-    border: none;  /* Prevents any border changes */
-    box-shadow: none; /* Removes any shadow if applied */
-    background-color: transparent; /* Ensures the background stays the same */
+    outline: none; 
+    border: none;  
+    box-shadow: none; 
+    background-color: transparent;
 }
 
 #search:active {

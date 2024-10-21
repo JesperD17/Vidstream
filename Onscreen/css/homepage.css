@@ -10,9 +10,9 @@
 .Spotlight {
     display: flex;
     gap: 15px;
-    left: 15px;
-    position: relative;
     overflow: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .movie-banner img {
@@ -24,4 +24,20 @@
 .Card {
     background: var(--first-color);
     border-radius: 10px;
+}
+
+.release_date, .ratings {
+    color: #9c9c9c;
+    width: max-content;
+}
+
+.card_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.titles {
+    width: 170px;
 }

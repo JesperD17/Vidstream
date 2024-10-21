@@ -30,8 +30,10 @@
                 </div>
                 <div class="card_info">
                     <div class="titles">${index + 1}. ${movie.title}</div>
-                    <div class="release_date">${movie.year}</div>
-                    <div class="ratings">${movie.rating}</div>
+                        <div class="rating_release">
+                            <div class="release_date">${movie.year}</div>
+                            <div class="ratings">${movie.rating} <i class='bx bxs-star-half'></i></div>
+                        </div>
                 </div>
             </div>
             `;
