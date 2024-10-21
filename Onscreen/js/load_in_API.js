@@ -1,7 +1,7 @@
 
     // console loggen API of error aangeven
     function fStart() {
-        let url = 'http://localhost:4030/home';
+        let url = 'https://vidstream-api.vercel.app/home';
         fetch(url)
             .then((response) => response.json())    
             .then((response) => {
@@ -38,8 +38,9 @@
             </div>
             `;
     
-            console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
+            // console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
         });
     
         document.querySelector(".Spotlight").innerHTML += html;
+        document.querySelector(".trending").innerHTML += html;
     }

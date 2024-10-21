@@ -1,4 +1,4 @@
-/* :root uit header.css */
+/* :root from header.css */
 
 body, html {
 	background: var(--first-color);
@@ -10,42 +10,97 @@ div#shell {
 	color: white;
 }
 
+/* text above cards */
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title {
+    font-size: 25px;
+    position: relative;
+    padding: 25px 0px 0px 25px;
+}
+
+.Hheader {
+    font-size: 45px;
+    margin: 20px 0px 0px 20px;
+}
+
+.text-right {
+    font-size: 20px;
+    position: relative;
+    align-items: end;
+    display: flex;
+}
+
+/* cards styling */
 .Spotlight {
     display: flex;
     gap: 15px;
-    overflow: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-
+    overflow: scroll;
+    padding: 25px 30px 25px 30px;
     scrollbar-color: var(--third-color) transparent;
     scrollbar-width: thin;
+    overflow-y: hidden;
+    user-select: none; 
+    cursor: grab;
+}
+
+.Spotlight:hover {
+    overflow-x: auto;
+}
+
+.Spotlight:active {
+    cursor: grabbing;
 }
 
 .movie-banner img {
     border-radius: 10px;
+    pointer-events: none;
 }
 
 .Card {
     background: var(--first-color);
     border-radius: 10px;
+    transition: .4s;
+}
+
+.Card:hover {
+    transform: scale(1.1);
+    clip-path: inset(0);
+    transition: .4s;
 }
 
 .release_date, .ratings {
     color: #9c9c9c;
     width: max-content;
+    transition: .4s; 
 }
 
 .card_info {
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.card_info:hover {
+    cursor: pointer;
 }
 
 .titles {
-    width: 170px;
+    transition: .4s;  
+}
+
+.titles:hover, .release_date:hover, .ratings:hover {
+    transform: scale(1.1);
+    clip-path: inset(0);
+    transition: .4s;   
 }
 
 i.bx.bxs-star-half {
     color: yellow;
 }
+
+
