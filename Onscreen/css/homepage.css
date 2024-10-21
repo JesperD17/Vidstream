@@ -1,10 +1,13 @@
-:root {
-    --first-color: linear-gradient(176deg, rgba(19, 15, 15, 1) 0%, rgba(0, 0, 0, 1) 100%);
-	--second-color: black;
-	--third-color: #505050;
-	--fourth-color: #e6e6e6;
-	--fifth-color: #141313;
-	--sixth-color: #b3b3b3;
+/* :root uit header.css */
+
+body, html {
+	background: var(--first-color);
+	margin: 0px;
+	font-family: fantasy;
+}
+
+div#shell {
+	color: white;
 }
 
 .Spotlight {
@@ -13,12 +16,13 @@
     overflow: auto;
     padding-left: 30px;
     padding-right: 30px;
+
+    scrollbar-color: var(--third-color) transparent;
+    scrollbar-width: thin;
 }
 
 .movie-banner img {
     border-radius: 10px;
-    /* width: 100%;
-    height: auto; */
 }
 
 .Card {
@@ -40,4 +44,8 @@
 
 .titles {
     width: 170px;
+}
+
+i.bx.bxs-star-half {
+    color: yellow;
 }

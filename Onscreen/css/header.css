@@ -17,15 +17,7 @@
 
 }
 
-body, html {
-	background: var(--first-color);
-	margin: 0px;
-	font-family: fantasy;
-}
 
-div#shell {
-	color: white;
-}
 
 #logo, #logo2 {
 	max-height: 100%; 
@@ -187,14 +179,11 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 
 	.links a {
 		display: none;
-		/* padding: 23px; */
 	}
 
 	.full_search_bar {
 		width: 88%;
-        /* justify-content: space-around; */
         gap: 15px;
-        /* flex-direction: row; */
 		
 	}
 
@@ -263,14 +252,11 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 
 	#searchIcon1 {
 		display: contents;
+		font-size: 35px;
 	}
 
 	#IconNoClick {
 		display: none;
-	}
-
-	i {
-		font-size: 35px;
 	}
 	
 	#search-field {
