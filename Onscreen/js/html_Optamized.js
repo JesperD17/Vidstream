@@ -1,5 +1,4 @@
 const sections = [
-    { title: "Featured", className: "Spotlight", mainClass: "MainCards" },
     { title: "Trending Movies", className: "Trending_movies", mainClass: "MainCards" },
     { title: "Trending Series", className: "Trending_series", mainClass: "MainCards" },
     { title: "Newest Movies", className: "latestMovies", mainClass: "MainCards" },
@@ -22,7 +21,7 @@ const sections = [
     const seeAllDiv = document.createElement("div");
     seeAllDiv.classList.add("text-right");
     const linkElement = document.createElement("a");
-    linkElement.href = "#";
+    linkElement.href = "error.html"; // naar 404 page
     linkElement.textContent = "See all";
     seeAllDiv.appendChild(linkElement);
   

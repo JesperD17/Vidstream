@@ -10,6 +10,28 @@ div#shell {
 	color: #a7acb0;
 }
 
+/* slideshow */
+
+.output {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-movie-banner {
+    opacity: 0.50;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.slide-card_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* text above cards */
 .head {
     display: flex;
@@ -32,23 +54,20 @@ div#shell {
     position: relative;
     align-items: end;
     display: flex;
-    color: white;
 
 }
 
-/* cards styling */
-/* .Spotlight, .Trending_movies, .Trending_series, .latestMovies, .latestMovies, .latestSeries {
-    display: flex;
-    gap: 15px;
-    overflow: scroll;
-    padding: 25px 30px 25px 30px;
-    scrollbar-color: var(--third-color) transparent;
-    scrollbar-width: thin;
-    overflow-y: hidden;
-    user-select: none; 
-    cursor: grab;
-} */
+.text-right a {
+    color: white;
+    text-decoration: none;
+}
 
+.text-right a:visited {
+    color: var(--third-color);
+}
+
+
+/* cards */
 .MainCards {
     display: flex;
     gap: 15px;
@@ -72,6 +91,8 @@ div#shell {
 .movie-banner img {
     border-radius: 10px;
     pointer-events: none;
+    height: 378px;
+    width: 250px
 }
 
 .Card {
