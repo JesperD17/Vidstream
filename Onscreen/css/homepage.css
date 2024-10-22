@@ -1,13 +1,13 @@
 /* :root from header.css */
 
 body, html {
-	background: var(--first-color);
+    background: var(--first-color);
 	margin: 0px;
 	font-family: fantasy;
 }
 
 div#shell {
-	color: white;
+	color: #a7acb0;
 }
 
 /* text above cards */
@@ -32,10 +32,24 @@ div#shell {
     position: relative;
     align-items: end;
     display: flex;
+    color: white;
+
 }
 
 /* cards styling */
-.Spotlight {
+/* .Spotlight, .Trending_movies, .Trending_series, .latestMovies, .latestMovies, .latestSeries {
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding: 25px 30px 25px 30px;
+    scrollbar-color: var(--third-color) transparent;
+    scrollbar-width: thin;
+    overflow-y: hidden;
+    user-select: none; 
+    cursor: grab;
+} */
+
+.MainCards {
     display: flex;
     gap: 15px;
     overflow: scroll;
@@ -47,11 +61,11 @@ div#shell {
     cursor: grab;
 }
 
-.Spotlight:hover {
+.MainCards:hover {
     overflow-x: auto;
 }
 
-.Spotlight:active {
+.MainCards:active {
     cursor: grabbing;
 }
 
@@ -67,7 +81,7 @@ div#shell {
 }
 
 .Card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     clip-path: inset(0);
     transition: .4s;
 }

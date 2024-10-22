@@ -1,6 +1,6 @@
 :root {
-	--first-color: linear-gradient(176deg, rgba(19, 15, 15, 1) 0%, rgba(0, 0, 0, 1) 100%);
-	--second-color: black;
+	--first-color: linear-gradient(51deg, rgba(46, 57, 63, 1) 0%, rgba(33, 39, 43, 1) 51%, rgba(29, 34, 41, 1) 100%);
+	--second-color:#1d2229;
 	--third-color: #505050;
 	--fourth-color: #e6e6e6;
 	--fifth-color: #141313;
@@ -20,8 +20,8 @@
 
 
 #logo, #logo2 {
-	max-height: 100%; 
-	object-fit: contain; 
+	max-height: 65px; 
+	object-fit:contain;
 }
 
 .links {
@@ -31,19 +31,29 @@
 }
 
 .links a:visited, .links a {
-	color: white;
+	color: var(--sixth-color);
 	text-decoration: none;
 	
 }
 
 .links a, .links2 a {
-    padding: 34px 20px 12px;
-    border: 2px solid black;
-	background: var(--fifth-color);
+    /* padding: 34px 20px 12px; */
+	padding: 10px;
+    /* border: 2px solid black; */
+	/* background: var(--fifth-color); */
     line-height: 50px;
 	border-radius: 10px;
 	font-family: fantasy;
 }
+
+.links a:not(:last-child)::after{
+	content:""; 
+	border:1px solid #e2e2e2;
+	border-width: 1px 1px 0 0;
+	position:relative; 
+	left: 9px; 
+	height:100%;
+  }
 
 ::marker {
     display: none;
@@ -61,6 +71,7 @@
     align-items: center;
     height: var(--nav-height);
     position: relative;
+	padding: 0px 25px;
 }
 
 #search {
@@ -137,6 +148,7 @@
 #IconNoClick {
 	position: absolute;
     right: 21px;
+	right: 50px;
 }
 
 i {
