@@ -42,10 +42,12 @@ div#shell {
 .slide-card_info {
     position: absolute;
     z-index: 10;
-    bottom: 0px;
-    /* transform: translateY(-50%); */
-    left: 50px;
+    bottom: 40px;
+    left: 40px;
+    font-size: 60px;
     color: white;
+    /* background: var(--first-color); */
+    background: radial-gradient(circle, rgba(33,39,43,1) 15%, rgba(33,39,43,0.9304096638655462) 49%, rgba(46,57,63,0.8015581232492998) 100%);
 }
 
 
@@ -156,3 +158,9 @@ i.bx.bxs-star-half {
 }
 
 
+@media (max-width: 889px) {
+    /* slider style */
+    .slide-movie-banner img {
+        height: 500px;
+    }
+}
