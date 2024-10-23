@@ -6,19 +6,21 @@
             .then((response) => response.json())    
             .then((response) => {
                 console.log("response =", response);
-                // let spotlight = response.spotlight;
+                let spotlight = response.spotlight;
                 let Trending_movie = response.trending.movies;
                 let Trending_series = response.trending.tvSeries;
                 let latestmovies = response.latestMovies;
                 let latestvSeries = response.latestTvSeries;  
 
                 // console.log("spotlight =", spotlight);
+                console.log("spotlight = ", spotlight)
                 console.log("trending =", Trending_movie);
                 console.log("trending =", Trending_series);
                 console.log("latestmovies =", latestmovies);
                 console.log("latestvseries =", latestvSeries);
                 
                 // fShow(spotlight, ".Spotlight");
+                lShow(spotlight, ".Spotlight");
                 fShow(Trending_movie, ".Trending_movies");
                 fShow(Trending_series, ".Trending_series");
                 fShow(latestmovies, ".latestMovies");
@@ -60,24 +62,6 @@
         document.querySelector(elementClass).innerHTML += html;
         // document.querySelector(".latestMovies").innerHTML += html;
     }
-
-
-    function lStart() {
-        fetch(url)
-            .then((response) => response.json())    
-            .then((response) => {
-                console.log("response =", response);
-                let spotlight = response.spotlight;  
-
-                console.log("spotlight =", spotlight);
-                
-                lShow(spotlight, ".Spotlight");
-            })
-            .catch(function (error) {
-                console.log("error=", error);
-            });
-    }
-    lStart()
 
     function lShow(movies) {
         let html = "";
