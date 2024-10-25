@@ -77,10 +77,21 @@
             <div class="${cardClass}">
                 <div class="${bannerClass}">
                 <img src="${movie.banner}" alt="${movie.title} banner"/>
-                    <div class="slide-card_info">
-                        <div class="slide-titles">${index + 1}. ${movie.title}</div>
-                        <div class="slide-release_date">${movie.year}</div>
-                        <div class="slide-ratings">${movie.rating}</div>
+                    <div class="img_front_color">
+                        <div class="slide-card_info">
+                            <div class="slide-titles">${index + 1}. ${movie.title}</div>
+                            <div class="slide-release_date">${movie.year}</div>
+                            <div class="slide-ratings">${movie.rating}</div>
+                        </div>
+                    </div>
+
+                    <div class="btns">
+                        <button class="slide_left">
+                            <i class='bx bxs-chevron-left'></i>
+                        </button>
+                        <button class="slide_right">
+                            <i class='bx bxs-chevron-right' ></i>
+                        </button>
                     </div>
                 </div>
             </div>
