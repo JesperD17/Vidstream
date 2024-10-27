@@ -12,14 +12,12 @@
                 let latestmovies = response.latestMovies;
                 let latestvSeries = response.latestTvSeries;  
 
-                // console.log("spotlight =", spotlight);
-                console.log("spotlight = ", spotlight)
-                console.log("trending =", Trending_movie);
-                console.log("trending =", Trending_series);
-                console.log("latestmovies =", latestmovies);
-                console.log("latestvseries =", latestvSeries);
+                // console.log("spotlight = ", spotlight)
+                // console.log("trending =", Trending_movie);
+                // console.log("trending =", Trending_series);
+                // console.log("latestmovies =", latestmovies);
+                // console.log("latestvseries =", latestvSeries);
                 
-                // fShow(spotlight, ".Spotlight");
                 lShow(spotlight, ".Spotlight");
                 fShow(Trending_movie, ".Trending_movies");
                 fShow(Trending_series, ".Trending_series");
@@ -97,7 +95,7 @@
             </div>
             `;
 
-            console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
+            // console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
         });
 
         document.querySelector(".output").innerHTML += html;

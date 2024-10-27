@@ -1,14 +1,6 @@
 /* :root from header.css */
 
-body, html {
-    background: var(--first-color);
-	margin: 0px;
-	font-family: fantasy;
-}
 
-div#shell {
-	color: #a7acb0;
-}
 
 /* slideshow */
 
