@@ -54,8 +54,8 @@
 
 .links {
     display: flex;
-    align-items: center;
-    
+    /* align-items: center; */
+	z-index: 1;
 }
 
 .links a:visited, .links a {
@@ -123,6 +123,7 @@
 	padding: 0 var(--padding-search-text);
 	position: relative;
 	display: block;
+	z-index: 1;
 }
 
 #search-field:active,
@@ -181,15 +182,32 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 
 	.links {
 		background: transparent;
-		width: auto;
+		/* width: auto; */
     	flex-direction: column;	
-		right: 100px;
+		/* right: 100px; */
 		position: relative;
 	}
 
 	.links a {
 		display: none;
+		right: 10px;
+		position: relative;
+		width: auto;
 	}
+
+	/* de '| link |'  */
+		.links a:not(:last-child)::after{
+			display: none;
+		}
+
+		.links a::before {
+			content: "";
+			border: 1px solid #e2e2e2;
+			border-width: 1px 1px 0 0;
+			position: relative;
+			right: 9px;
+			height: 100%;
+		}
 
 	a {
 		width: 120px;
@@ -197,7 +215,7 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 
 	summary {
 		position: absolute;
-		width: max-content;
+		/* width: 40px; */
 	}
 
 	i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
@@ -227,16 +245,6 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 	#search {
 		border: none !important;
 	} 
-
-	/* .search-bar {
-		flex-direction: row-reverse;
-		display: flex;
-		top: 80px;
-        position: relative;
-		border: transparent;
-		color: transparent;
-		
-	} */
 	
 	#search-field {
 		width: 90%;

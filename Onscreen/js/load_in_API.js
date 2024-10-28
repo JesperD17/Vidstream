@@ -1,4 +1,3 @@
-
     // console loggen API of error aangeven
     let url = 'https://vidstream-api.vercel.app/home';
     function fStart() {
@@ -36,7 +35,6 @@
         el.forEach(function (movie_serie, index) {
             const cardClass = `Card ${index + 1}`;
             const bannerClass = `movie-banner ${index + 1}`;
-                // <img src="${movie_serie.banner}" alt="${movie_serie.title} banner"/>
             html += `
             <div class="${cardClass}">
                 <div class="${bannerClass}">
@@ -53,24 +51,20 @@
                 </div>
             </div>
             `;
-    
-            // console.log(`Movie: ${spot.title}, Banner Class: ${bannerClass}`);
+
         });
     
         document.querySelector(elementClass).innerHTML += html;
-        // document.querySelector(".latestMovies").innerHTML += html;
     }
 
     function lShow(movies) {
         let html = "";
 
         movies.forEach(function (movie, index) {
-            
+            const allImages = document.querySelector('.slide-Card');
             const cardClass = `slide-Card ${index + 1}`;
             const bannerClass = `slide-movie-banner ${index + 1}`;
-    
-                // <img src="${movie.banner}" alt="${movie.title} banner"/>
-                // <img src="${movie.poster}" alt="${movie.title} poster"/>
+
             html += `
             <div class="${cardClass}">
                 <div class="${bannerClass}">
@@ -83,21 +77,11 @@
                         </div>
                     </div>
 
-                    <div class="btns">
-                        <button class="slide_left">
-                            <i class='bx bxs-chevron-left'></i>
-                        </button>
-                        <button class="slide_right">
-                            <i class='bx bxs-chevron-right' ></i>
-                        </button>
-                    </div>
+
                 </div>
             </div>
             `;
-
-            // console.log(`Movie: ${movie.title}, Banner Class: ${bannerClass}`);
         });
-
+        import { test() } from "/"
         document.querySelector(".output").innerHTML += html;
-
     }
