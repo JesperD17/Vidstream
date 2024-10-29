@@ -1,4 +1,5 @@
     // console loggen API of error aangeven
+    import { buttonsClick, showSlides } from './slideshowButton.js';
     let url = 'https://vidstream-api.vercel.app/home';
     function fStart() {
         fetch(url)
@@ -32,6 +33,7 @@
     function fShow(el, elementClass) {
         let html = "";
     
+        // Loads in for every movie
         el.forEach(function (movie_serie, index) {
             const cardClass = `Card ${index + 1}`;
             const bannerClass = `movie-banner ${index + 1}`;
@@ -60,6 +62,7 @@
     function lShow(movies) {
         let html = "";
 
+        // Loads in for every movie
         movies.forEach(function (movie, index) {
             const allImages = document.querySelector('.slide-Card');
             const cardClass = `slide-Card ${index + 1}`;
@@ -82,6 +85,9 @@
             </div>
             `;
         });
-        import { test() } from "/"
         document.querySelector(".output").innerHTML += html;
+        
+        // slideshowButton.js
+        showSlides();
+        buttonsClick(); 
     }
