@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <title>Vidstream</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/header.css" type="text/css" media="all" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- <link rel="stylesheet" href="../css/collapsibleContent.css"> -->
   <link rel="stylesheet" href="../css/homepage.css">
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/header.css"></link>
   <link rel="icon" type="image/x-icon" href="../pics/Logo Icon2.png">
   <script src="../js/load_in_API.js" type="module"></script>
 </head>
@@ -18,6 +19,7 @@
 <div id="shell">
     <!-- Header -->
     <div id="header">
+      <?php include('header.html') ?>
     </div>
 
 
@@ -38,7 +40,7 @@
     </div>
 
   <!-- Footer -->
-
+  <?php include('footer.html') ?>
   
 
 </div>
@@ -51,5 +53,5 @@
 <script src="../js/collapsibleContent.js"></script>
 <script src="../js/html_Optamized.js"></script>
 <script src="../js/scrollableContent.js"></script>
-<script src="../js/html_includeAll_html.js"></script>
+<!-- <script src="../js/html_includeAll_html.js"></script> -->
 

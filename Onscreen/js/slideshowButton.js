@@ -1,5 +1,5 @@
 let slideIndex = 0;
-const slideTime = 0;
+// const slideTime = 0;
 export function showSlides() {
   // shows next image
   let i;
