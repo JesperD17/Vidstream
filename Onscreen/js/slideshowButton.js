@@ -1,49 +1,55 @@
 let slideIndex = 0;
-// const slideTime = 0;
+let slideTime;
+
 export function showSlides() {
-  // shows next image
-  let i;
-  let slides = document.getElementsByClassName("slide-Card"); // Grabs every slide
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function slide() {
+    // shows next image
+    let i;
+    let slides = document.getElementsByClassName("slide-Card"); // Grabs every slide
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      slides[i].classList.remove("active_style_slide");
+    }
+
+    slideIndex++;
+
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block"; // shows ++ card evert change
+    slides[slideIndex - 1].classList.add("active_style_slide");
+
+    slideTime = setTimeout(slide, 1000); // Change every 2 seconds
   }
 
-  slideIndex++;
-
   // timer
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  clearTimeout(slideTime);
+  slide();
 
-  slideTime = setTimeout(showSlides, 2000); // Change every 2 seconds
-  console.log()
-}
 
-// Send the function towards load in the API, as querySelector needs to detect the element after the div has loaded via the AP
-export function buttonsClick() {  
+  // // button detect click, changes image
   const left = document.querySelector('.slide_left');
   const right = document.querySelector('.slide_right');
   const allImages = document.querySelector('.slide-Card');
-  console.log(left, right, allImages)
+  // console.log(left, right, allImages)
 
-      left.addEventListener('click', () => {
-        console.log('links');
-        clearTimeout(slideTime);
+  left.addEventListener('click', () => {
+    console.log('links');
+    clearTimeout(slideTime);
 
-          // if (showSlides === 0) {
-          //   console.log("de timer is gereset!")
-          // } else {
-          //   console.log("de timer loopt door")
-          // }
-      });
+    slide();
+  });
 
-      right.addEventListener('click', () => {
-        console.log('rechts');
-        clearTimeout(slideTime);
+  right.addEventListener('click', () => {
+    console.log('rechts');
+    clearTimeout(slideTime);
 
-          // if (showSlides === 0) {
-          //   console.log("de timer is gereset!")
-          // } else {
-          //   console.log("de timer loopt door")
-          // }
-      });
+    slide();
+  });
+
+
+
 }

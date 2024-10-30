@@ -1,5 +1,5 @@
     // console loggen API of error aangeven
-    import { buttonsClick, showSlides } from './slideshowButton.js';
+    import { showSlides } from './slideshowButton.js';
     let url = 'https://vidstream-api.vercel.app/home';
     function fStart() {
         fetch(url)
@@ -86,8 +86,10 @@
             `;
         });
         document.querySelector(".output").innerHTML += html;
-        
         // slideshowButton.js
-        showSlides();
-        buttonsClick(); 
+
+        setTimeout(() => { 
+            // buttonsClick(); 
+            showSlides();
+        }, 1)
     }
