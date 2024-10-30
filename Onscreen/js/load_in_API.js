@@ -36,7 +36,7 @@
         // Loads in for every movie
         el.forEach(function (movie_serie, index) {
             const cardClass = `Card ${index + 1}`;
-            const bannerClass = `movie-banner ${index + 1}`;
+            const bannerClass = `movie-banner ${index + 1} skeleton`;
             html += `
             <div class="${cardClass}">
                 <div class="${bannerClass}">
@@ -79,7 +79,6 @@
                             <div class="slide-ratings">${movie.rating}</div>
                         </div>
                     </div>
-
 
                 </div>
             </div>

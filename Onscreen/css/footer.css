@@ -1,0 +1,44 @@
+.footer {
+    position: relative;
+    height: 200px;
+}
+
+/* footer links */
+.footer_links summary .links {
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+
+.logo_links {
+    display: flex;
+    height: 60%;
+    justify-content: space-between;
+    margin: 5% 25% 0%
+}
+
+
+/* footer bar */
+.footer .footer_bar::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+    border-image: initial;
+    border-width: 5px 1px 0px 0px;
+    left: 5%;
+    top: -45%;
+}
+
+/* collab */
+.WBR_collab_text {
+    display: flex;
+    padding: 30px;
+    justify-content: end;
+    gap: 5px;
+}
+
+.WBR_collab_text a {
+    width: fit-content;
+}

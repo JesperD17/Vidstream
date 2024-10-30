@@ -2,28 +2,37 @@ let slideIndex = 0;
 let slideTime;
 
 export function showSlides() {
-  function slide() {
+  function slide(left = false) {
     // shows next image
-    let i;
-    let slides = document.getElementsByClassName("slide-Card"); // Grabs every slide
+      
+      let i;
+      let slides = document.getElementsByClassName("slide-Card"); // Grabs every slide
 
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      slides[i].classList.remove("active_style_slide");
+      for (i = 0; i < slides.length; i++) {
+        // slides[i].style.display = "none";
+        slides[i].classList.remove("active_style_slide");
+      }
+    if (left) {
+      slideIndex--;
+      
+      if (slideIndex < 1) {
+        slideIndex = slides.length;
+      }
+    } else {
+      slideIndex++;
+      
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
     }
+      
+      // slides[slideIndex - 1].style.display = "block"; // shows ++ card evert change
+      slides[slideIndex - 1].classList.add("active_style_slide");
 
-    slideIndex++;
-
-
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-
-    slides[slideIndex - 1].style.display = "block"; // shows ++ card evert change
-    slides[slideIndex - 1].classList.add("active_style_slide");
-
-    slideTime = setTimeout(slide, 1000); // Change every 2 seconds
+      slideTime = setTimeout(slide, 3000); // changing seconds
   }
+
+
 
   // timer
   clearTimeout(slideTime);
@@ -40,7 +49,7 @@ export function showSlides() {
     console.log('links');
     clearTimeout(slideTime);
 
-    slide();
+    slide(true);
   });
 
   right.addEventListener('click', () => {

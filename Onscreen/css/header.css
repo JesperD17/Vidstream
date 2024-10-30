@@ -52,7 +52,7 @@
     width: 83%;
 }
 
-.links {
+#content .links {
     display: flex;
     /* align-items: center; */
 	z-index: 1;
@@ -64,14 +64,14 @@
 	
 }
 
-.links a, .links2 a {
+#content .links a {
 	padding: 10px;
     line-height: 50px;
 	border-radius: 10px;
 	font-family: fantasy;
 }
 
-.links a:not(:last-child)::after{
+#content .links a:not(:last-child)::after{
 	content:""; 
 	border:1px solid #e2e2e2;
 	border-width: 1px 1px 0 0;
@@ -180,7 +180,12 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 		
 	}
 
-	.links {
+	i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
+		display: contents;
+		font-size: 35px;
+	}
+
+	#content .links {
 		background: transparent;
 		/* width: auto; */
     	flex-direction: column;	
@@ -188,7 +193,7 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 		position: relative;
 	}
 
-	.links a {
+	#content .links a {
 		display: none;
 		right: 10px;
 		position: relative;
@@ -196,18 +201,19 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 	}
 
 	/* de '| link |'  */
-		.links a:not(:last-child)::after{
-			display: none;
-		}
+	#content .links a:not(:last-child)::after{
+		display: none;
+	}
 
-		.links a::before {
-			content: "";
-			border: 1px solid #e2e2e2;
-			border-width: 1px 1px 0 0;
-			position: relative;
-			right: 9px;
-			height: 100%;
-		}
+	/* Used in footer.css */
+	.links a::before {
+		content: "";
+		border: 1px solid #e2e2e2;
+		border-width: 1px 1px 0 0;
+		position: relative;
+		right: 9px;
+		height: 100%;
+	}
 
 	a {
 		width: 120px;
@@ -215,13 +221,8 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 
 	summary {
 		position: absolute;
-		/* width: 40px; */
 	}
-
-	i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
-		display: contents;
-		font-size: 35px;
-	}
+	
 }
 
 @media (max-width: 900px) {
