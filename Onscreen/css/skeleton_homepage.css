@@ -1,7 +1,7 @@
-.skeleton {
+.skeleton_style {
     animation: skeleton-loading is linear 1s infinity alternate;
     height: var(--card-height);
-    width: var(--card-hwidth);
+    width: var(--card-width);
 }
 
 @keyframes skeleton-loading {

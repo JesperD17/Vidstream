@@ -2,6 +2,8 @@
     import { showSlides } from './slideshowButton.js';
     let url = 'https://vidstream-api.vercel.app/home';
     function fStart() {
+        document.getElementById("shell").style.display = "none";
+
         fetch(url)
             .then((response) => response.json())    
             .then((response) => {
@@ -23,6 +25,9 @@
                 fShow(Trending_series, ".Trending_series");
                 fShow(latestmovies, ".latestMovies");
                 fShow(latestvSeries, ".latesTvSeries");
+                
+                document.querySelector(".skeleton_style").style.display = "none";
+                document.getElementById("shell").style.display = "contents";
             })
             .catch(function (error) {
                 console.log("error=", error);
@@ -36,7 +41,7 @@
         // Loads in for every movie
         el.forEach(function (movie_serie, index) {
             const cardClass = `Card ${index + 1}`;
-            const bannerClass = `movie-banner ${index + 1} skeleton`;
+            const bannerClass = `movie-banner ${index + 1}`;
             html += `
             <div class="${cardClass}">
                 <div class="${bannerClass}">

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- <link rel="stylesheet" href="../css/collapsibleContent.css"> -->
-  <link rel="stylesheet" href="../css/homepage.css">
   <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/homepage.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/skeleton homepage.css">
@@ -17,6 +17,9 @@
 </head>
 
 <body>
+  <div class= "skeleton_style">
+    <?php include('skeleton.html') ?>
+  </div>
 <div id="shell">
   
     <!-- Header -->
@@ -38,7 +41,7 @@
     </div>
     
     <!-- Headers & text & movies, series etc. -->
-    <div class= ".movie-banner .skeleton"></div>
+    
     <div id="main">
     </div>
 
