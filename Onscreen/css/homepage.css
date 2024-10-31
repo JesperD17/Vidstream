@@ -1,4 +1,4 @@
-/* :root from header.css */
+/* :root from general.css */
 
 
 
@@ -167,8 +167,8 @@ button.slide_left, button.slide_right {
 .movie-banner img {
     border-radius: 10px;
     pointer-events: none;
-    height: 378px;
-    width: 250px
+    height: var(--card-height); /* 378px */
+    width: var(--card-width); /* 250px */
 }
 
 .Card {
