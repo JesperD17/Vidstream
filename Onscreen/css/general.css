@@ -33,3 +33,8 @@ div#shell {
 i {
 	cursor: pointer
 }
+
+.links a:visited, .links a {
+	color: var(--sixth-color);
+	text-decoration: none;
+}

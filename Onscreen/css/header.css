@@ -39,12 +39,6 @@
 	z-index: 1;
 }
 
-.links a:visited, .links a {
-	color: var(--sixth-color);
-	text-decoration: none;
-	
-}
-
 #content .links a {
 	padding: 10px;
     line-height: 50px;
@@ -187,7 +181,7 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 	}
 
 	/* Used in footer.css */
-	.links a::before {
+	#content .links a::before {
 		content: "";
 		border: 1px solid #e2e2e2;
 		border-width: 1px 1px 0 0;
