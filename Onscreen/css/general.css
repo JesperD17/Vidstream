@@ -34,3 +34,6 @@ i {
 	cursor: pointer
 }
 
+.hover:hover {
+    color: white !important;
+}

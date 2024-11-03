@@ -15,9 +15,11 @@
             <div class="header">Whoops, that page is gone!</div>
             <div class="error_code">404</div>
             <div class="text">
-                <i class='bx bx-chevron-left'></i>
+                <a href="http://localhost/Vidstream/Vidstream/Onscreen/html/homepage.php" class="hover">
+                    <i class='bx bx-chevron-left'></i>
+                </a>
                     Take me back to 
-                    <a href="http://localhost/Vidstream/Vidstream/Onscreen/html/homepage.php">Vidstream</a>
+                    <a href="http://localhost/Vidstream/Vidstream/Onscreen/html/homepage.php" class="hover">Vidstream</a>
             </div>
             
         </div>

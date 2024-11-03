@@ -13,6 +13,7 @@
     height: var(--nav-height);
     position: relative;
 	padding: 0px 25px;
+	background: var(--first-color);
 }
 
 #logo, #logo2 {

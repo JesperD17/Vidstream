@@ -24,6 +24,11 @@ div#shell {
     font-size: calc(39vw + 35px);
 }
 
+.text a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
 @media (max-width: 1374px) {
     body {
         height: 100vh;
