@@ -123,7 +123,7 @@ button.slide_left, button.slide_right {
     position: relative;
     align-items: end;
     display: flex;
-
+    right: 35px;
 }
 
 .text-right a {

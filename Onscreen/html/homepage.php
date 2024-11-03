@@ -9,8 +9,8 @@
   <!-- <link rel="stylesheet" href="../css/collapsibleContent.css"> -->
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="../css/homepage.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
+  <!-- <link rel="stylesheet" href="../css/header.css"> -->
+  <!-- <link rel="stylesheet" href="../css/footer.css"> -->
   <link rel="stylesheet" href="../css/skeleton homepage.css">
   <link rel="icon" type="image/x-icon" href="../pics/Logo Icon2.png">
   <script src="../js/load_in_API.js" type="module"></script>

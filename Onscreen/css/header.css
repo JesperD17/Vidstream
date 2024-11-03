@@ -33,6 +33,11 @@
     width: 83%;
 }
 
+.links a:visited, .links a {
+	color: var(--sixth-color);
+	text-decoration: none;
+}
+
 #content .links {
     display: flex;
     /* align-items: center; */
@@ -190,9 +195,9 @@ i.bx.bx-align-left, i.bx.hiden.bx-align-middle {
 		height: 100%;
 	}
 
-	a {
+	/* a {
 		width: 120px;
-	}
+	} */
 
 	summary {
 		position: absolute;

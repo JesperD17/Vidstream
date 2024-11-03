@@ -43,3 +43,53 @@ summary2 {
 img.footer_Logo {
     height: calc(15vh - 17px);
 }
+
+/* collab */
+.WBR_collab_text {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin: 20px;
+}
+
+#second_part, #fourth_part {
+    /* color: var(--first-color); */
+    color: white;
+}
+
+.WBR_collab_text a {
+    text-decoration: none;
+}
+
+.WBR_collab_text a::after {
+    position: relative;
+    height: 2px;
+    content: "";
+    
+    background: var(--third-color);
+    display: block; 
+    width: 100%; 
+    top: 5px;
+}
+
+.WBR_collab_text a:hover::after {
+    background: var(--fourth-color);
+}
+
+.WBR_collab_text a:hover::after {
+    opacity: 1; /* Fade-in on hover */
+    /* animation: fadeOut 1s forwards; */
+    animation: fadeIn 1s forwards;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
