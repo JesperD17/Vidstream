@@ -48,13 +48,21 @@ img.footer_Logo {
     height: calc(15vh - 17px);
 }
 
+/* align logo */
+.footer .logo_links a {
+    align-items: center;
+    display: flex;
+}
+
 /* collab */
 .WBR_collab_text {
     display: flex;
     justify-content: end;
     gap: 5px;
-    margin: 20px;
+    right: 20px;
+    bottom: 20px;
 }
+
 
 #second_part, #fourth_part {
     /* color: var(--first-color); */

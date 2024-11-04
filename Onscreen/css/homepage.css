@@ -124,6 +124,11 @@ button.slide_left, button.slide_right {
     align-items: end;
     display: flex;
     right: 35px;
+    right: 20px;
+}
+
+.text-right:hover {
+    color: var(--first-color);
 }
 
 .text-right a {
