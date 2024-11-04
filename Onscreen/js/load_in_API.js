@@ -28,7 +28,6 @@
                 
                 document.querySelector(".skeleton_style").style.display = "none";
                 document.getElementById("shell").style.display = "contents";
-                document.querySelector(".test_remove").style.display = "none";
             })
             .catch(function (error) {
                 console.log("error=", error);

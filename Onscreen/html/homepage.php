@@ -6,19 +6,15 @@
   <title>Vidstream</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- <link rel="stylesheet" href="../css/collapsibleContent.css"> -->
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="../css/homepage.css">
-  <!-- <link rel="stylesheet" href="../css/header.css"> -->
-  <!-- <link rel="stylesheet" href="../css/footer.css"> -->
-  <!-- <link rel="stylesheet" href="../css/skeleton homepage.css"> -->
   <link rel="icon" type="image/x-icon" href="../pics/Logo Icon2.png">
   <script src="../js/load_in_API.js" type="module"></script>
 </head>
 
 <body>
   <div class= "skeleton_style">
-    <?php include('skeleton.php') ?>
+
   </div>
 
 <div id="shell">
