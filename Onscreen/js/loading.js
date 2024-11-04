@@ -1,10 +1,11 @@
-// history.pushState(null, null, location.href);
+document.title = "Loading..."; // Set a default title
+history.pushState(null, null, location.href);
 
-// var dots = window.setInterval( function() {
-//     var wait = document.querySelector(".loading");
-//     if ( wait.innerHTML.length > 3 ) 
-//         wait.innerHTML = "";
-//     else 
-//         wait.innerHTML += ".";
-//     }, 500);
-
+var dots = window.setInterval(function() {
+    var wait = document.title; // Use document.title instead of .loader
+    if (wait.length > 10) {
+        document.title = "Loading."; // Reset title when it gets too long
+    } else {
+        document.title += "."; // Append a dot
+    }
+}, 500);

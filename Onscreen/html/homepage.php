@@ -11,15 +11,16 @@
   <link rel="stylesheet" href="../css/homepage.css">
   <!-- <link rel="stylesheet" href="../css/header.css"> -->
   <!-- <link rel="stylesheet" href="../css/footer.css"> -->
-  <link rel="stylesheet" href="../css/skeleton homepage.css">
+  <!-- <link rel="stylesheet" href="../css/skeleton homepage.css"> -->
   <link rel="icon" type="image/x-icon" href="../pics/Logo Icon2.png">
   <script src="../js/load_in_API.js" type="module"></script>
 </head>
 
 <body>
   <div class= "skeleton_style">
-    <?php include('skeleton.html') ?>
+    <?php include('skeleton.php') ?>
   </div>
+
 <div id="shell">
   
     <!-- Header -->
