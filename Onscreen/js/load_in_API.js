@@ -1,6 +1,13 @@
     // console loggen API of error aangeven
     import { showSlides } from './slideshowButton.js';
+    import { html } from './html_Optamized.js';
+    import { loader } from './loader.js';
+    // import { pauseLoader } from './loader.js';
     let url = 'https://vidstream-api.vercel.app/home';
+
+    loader();
+    html();
+
     function fStart() {
         document.getElementById("shell").style.display = "none";
 
@@ -28,10 +35,13 @@
                 
                 document.querySelector(".skeleton_style").style.display = "none";
                 document.getElementById("shell").style.display = "contents";
+
+                // pauseLoader();
             })
             .catch(function (error) {
                 console.log("error=", error);
             });
+            
     }
     fStart();
     
@@ -89,11 +99,14 @@
             </div>
             `;
         });
+
+        
         document.querySelector(".output").innerHTML += html;
         // slideshowButton.js
-
+        
         setTimeout(() => { 
             // buttonsClick(); 
             showSlides();
+            
         }, 1)
     }

@@ -14,7 +14,7 @@
 
 <body>
   <div class= "skeleton_style">
-
+    <?php include('skeleton.php') ?>
   </div>
 
 <div id="shell">
@@ -54,7 +54,7 @@
 </html>
 
 <script src="../js/collapsibleContent.js"></script>
-<script src="../js/html_Optamized.js"></script>
 <script src="../js/scrollableContent.js"></script>
+<!-- <script src="../js/html_Optamized.js"></script> -->
 <!-- <script src="../js/html_includeAll_html.js"></script> -->
 

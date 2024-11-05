@@ -11,9 +11,6 @@
     scrollbar-width: none;
     flex-wrap: nowrap !important;
     position: relative;
-    /* transform: scale(1.0); */
-    /* transition: transform 0.5s ease, opacity 0.5s ease; */
-
     height: 600px;;
 }
 

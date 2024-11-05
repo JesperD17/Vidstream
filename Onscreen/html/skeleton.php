@@ -13,15 +13,15 @@
     <title class="loader">.</title>
 </head>
 <body>
-    <div id="shell">
-    <?php include 'header.html' ?>
 
-        <div id="main"></div>
+ssss
+    <div id="shell2">
+
+        wsss
         
-        <?php include 'footer.html' ?>
     </div>
 </body>
 </html>
 
-<script src="../js/html_Optamized.js"></script>
-<script src="../js/loading.js"></script>
+<!-- <script src="../js/html_Optamized.js"></script> -->
+<!-- <script src="../js/loader.js"></script> -->

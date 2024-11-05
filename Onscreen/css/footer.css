@@ -1,7 +1,7 @@
 /* :root from general.css */
 
 .footer {
-    background: var(--first-color);
+    background: var(--first-color); 
     height: 300px;
     /* justify-content: center;
     flex-direction: column;
