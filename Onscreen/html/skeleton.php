@@ -14,11 +14,11 @@
 </head>
 <body>
 
-ssss
     <div id="shell2">
-
-        wsss
-        
+        <div class="loader_alignment">
+            <div class="loader"></div>
+        </div>  
+    <!-- <div id="main"></div> -->
     </div>
 </body>
 </html>
