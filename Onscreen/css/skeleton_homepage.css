@@ -5,6 +5,7 @@ div#shell2 {
   background: var(--first-color);
 }
 
+/* aligned loader & animated loader */
 .loader_alignment {
   height: 100%;
   width: 100%;
@@ -31,9 +32,10 @@ div#shell2 {
   }
 
 
-
-  .skeleton {
+/*  */
+  img {
     animation: skeleton-loading 1s linear infinite alternate;
+  
   }
   
   @keyframes skeleton-loading {

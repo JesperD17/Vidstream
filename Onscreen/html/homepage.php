@@ -39,8 +39,7 @@
     
     <!-- Headers & text & movies, series etc. -->
     
-    <div id="main">
-    </div>
+    <div id="main"></div>
 
   <!-- Footer -->
   <?php include('footer.html') ?>

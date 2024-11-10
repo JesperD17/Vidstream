@@ -2,6 +2,7 @@
     import { showSlides } from './slideshowButton.js';
     import { html } from './html_Optamized.js';
     import { loader } from './loader.js';
+    import { remover } from './stylesheetRemover.js';
     // import { pauseLoader } from './loader.js';
     let url = 'https://vidstream-api.vercel.app/home';
 
@@ -12,29 +13,31 @@
         document.getElementById("shell").style.display = "none";
 
         fetch(url)
-            .then((response) => response.json())    
-            .then((response) => {
-                console.log("response =", response);
-                let spotlight = response.spotlight;
-                let Trending_movie = response.trending.movies;
-                let Trending_series = response.trending.tvSeries;
-                let latestmovies = response.latestMovies;
-                let latestvSeries = response.latestTvSeries;  
+        .then((response) => response.json())    
+        .then((response) => {
+            console.log("response =", response);
+            let spotlight = response.spotlight;
+            let Trending_movie = response.trending.movies;
+            let Trending_series = response.trending.tvSeries;
+            let latestmovies = response.latestMovies;
+            let latestvSeries = response.latestTvSeries;  
+            
+            // console.log("spotlight = ", spotlight)
+            // console.log("trending =", Trending_movie);
+            // console.log("trending =", Trending_series);
+            // console.log("latestmovies =", latestmovies);
+            // console.log("latestvseries =", latestvSeries);
+            
+            lShow(spotlight, ".Spotlight");
+            fShow(Trending_movie, ".Trending_movies");
+            fShow(Trending_series, ".Trending_series");
+            fShow(latestmovies, ".latestMovies");
+            fShow(latestvSeries, ".latesTvSeries");
+            
+            remover();
 
-                // console.log("spotlight = ", spotlight)
-                // console.log("trending =", Trending_movie);
-                // console.log("trending =", Trending_series);
-                // console.log("latestmovies =", latestmovies);
-                // console.log("latestvseries =", latestvSeries);
-                
-                lShow(spotlight, ".Spotlight");
-                fShow(Trending_movie, ".Trending_movies");
-                fShow(Trending_series, ".Trending_series");
-                fShow(latestmovies, ".latestMovies");
-                fShow(latestvSeries, ".latesTvSeries");
-                
-                document.querySelector(".skeleton_style").style.display = "none";
-                document.getElementById("shell").style.display = "contents";
+            document.querySelector(".skeleton_style").style.display = "none";
+            document.getElementById("shell").style.display = "contents";
 
                 // pauseLoader();
             })
