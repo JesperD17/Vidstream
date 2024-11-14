@@ -14,10 +14,10 @@
 </head>
 <body>
 
-    <div id="shell2">
-        <div class="loader_alignment">
-            <div class="loader"></div>
-        </div>  
+<div id="shell2">
+    <div class="loader_alignment">
+        <div class="loader"></div>
+    </div>  
         
     <div class="output">
         <div class="${cardClass}">
@@ -43,28 +43,27 @@
         </div>
     </div>
 
-    
-        
-
-
-     <div class="Card">
-        <div class="movie-banner">
-            <img class="poster"/>
-        </div>
-        <div class="card_info">
-            <div class="titles">${index + 1}. ${movie_serie.title}</div>
-                <div class="rating_release">
-                    <div class="release_date">${movie_serie.stats.year}</div>
-                    <div class="seasons">${movie_serie.stats.seasons}</div>
-                    <div class="duration">${movie_serie.stats.duration}</div>
-                    <div class="ratings">${movie_serie.stats.rating} <i class='bx bxs-star-half'></i></div>
-                </div>
+<!-- <div class="Card">
+    <div class="movie-banner">
+        <img class="poster"/>
+    </div>
+    <div class="card_info">
+        <div class="titles">${index + 1}. ${movie_serie.title}</div>
+            <div class="rating_release">
+                <div class="release_date">${movie_serie.stats.year}</div>
+                <div class="seasons">${movie_serie.stats.seasons}</div>
+                <div class="duration">${movie_serie.stats.duration}</div>
+                <div class="ratings">${movie_serie.stats.rating} <i class='bx bxs-star-half'></i></div>
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="skeleton output"></div>
     <!-- <div class="output"></div> -->
 </body>
 </html>
 
 <script src="../js/html_Optamized.js"></script>
+<script src="../js/skeleton.js"></script>
 <!-- <script src="../js/loader.js"></script> -->
