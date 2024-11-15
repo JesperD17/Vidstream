@@ -1,17 +1,17 @@
-// let dummyCard = 10;
+var array = 10;
 
-function fShow(dummyCard) {
+function fShow() {
     let html = "";
     
     // Loads in for every movie
     // el.forEach(function (dummyCard) {
-    Array.from({ length: dummyCard }).forEach((_, index) => {
-
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
         const cardClass = `Card ${index + 1}`;
         const bannerClass = `movie-banner ${index + 1}`;
         html += `
-        <div class="{cardClass}">
-            <div class="{bannerClass}">
+        <div class="${cardClass}">
+            <div class="${bannerClass}">
                 <img src="{movie_serie.poster}" alt="{movie_serie.title} poster"/>
             </div>
             <div class="card_info">
@@ -26,7 +26,10 @@ function fShow(dummyCard) {
         </div>
         `;
 
-    });
-
-    document.querySelector(".skeleton.output").innerHTML += html;
+    }
+    document.querySelector(".skeleton   output").innerHTML += html;
 }
+
+
+
+    
