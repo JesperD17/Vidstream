@@ -1,4 +1,4 @@
-const cards = [
+const skeletonCards = [
     {
         poster: "poster1.jpg",
         title: "Movie 1",
@@ -12,9 +12,9 @@ const cards = [
     // Add more card objects here
 ];
 
-function fShow(cards) {
+function fShow(skeletonCards) {
     let html = "";
-    cards.forEach(function (movie_serie, index) {
+    skeletonCards.forEach(function (movie_serie, index) {
         const cardClass = `Card ${index + 1}`;
         const bannerClass = `movie-banner ${index + 1}`;
         html += `
@@ -34,8 +34,8 @@ function fShow(cards) {
             </div>
         `;
     });
-    document.querySelector("#skeleton").innerHTML += html;
+    document.querySelector(".skeleton").innerHTML += html;
 }
 
-// Call the function with the cards array
-fShow(cards);
+// Call the function with the skeletonCards array
+fShow(skeletonCards);

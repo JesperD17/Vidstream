@@ -1,15 +1,16 @@
-    // console loggen API of error aangeven
-    import { showSlides } from './slideshowButton.js';
-    import { html } from './html_Optamized.js';
-    import { loader } from './loader.js';
-    import { remover } from './stylesheetRemover.js';
-    // import { pauseLoader } from './loader.js';
-    let url = 'https://vidstream-api.vercel.app/home';
 
-    loader();
-    html();
+// console loggen API of error aangeven
+import { showSlides } from './slideshowButton.js';
+import { htmlStructure } from './html_Optamized.js';
+import { loader } from './loader.js';
+import { remover } from './stylesheetRemover.js';
+// import { pauseLoader } from './loader.js';
+let url = 'https://vidstream-api.vercel.app/home';
 
-    function fStart() {
+htmlStructure();
+loader();
+
+function fStart() {
         document.getElementById("shell").style.display = "none";
 
         fetch(url)

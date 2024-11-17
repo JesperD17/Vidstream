@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="../css/homepage.css">
   <link rel="icon" type="image/x-icon" href="../pics/Logo Icon2.png">
-  <script src="../js/load_in_API.js" type="module"></script>
 </head>
 
 <body>
@@ -57,3 +56,4 @@
 <!-- <script src="../js/html_Optamized.js"></script> -->
 <!-- <script src="../js/html_includeAll_html.js"></script> -->
 
+<script src="../js/load_in_API.js" type="module"></script>

@@ -55,15 +55,15 @@
                     <div class="ratings">${movie_serie.stats.rating} <i class='bx bxs-star-half'></i></div>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
     
     <div class="skeleton"></div>
     <!-- <div class="output"></div> -->
 </body>
 </html>
 
-<!-- <script src="../js/skeleton.js"></script> -->
+<script src="../js/skeleton.js"></script>
 <!-- <script src="../js/html_Optamized.js"></script> -->
 
 <!-- <script src="../js/loader.js"></script> -->

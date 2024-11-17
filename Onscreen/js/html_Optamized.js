@@ -1,4 +1,4 @@
-export function html() {
+export function htmlStructure() {
   const sections = [
       { title: "Trending Movies", className: "Trending_movies", mainClass: "MainCards" },
       { title: "Trending Series", className: "Trending_series", mainClass: "MainCards" },
@@ -7,6 +7,11 @@ export function html() {
     ];
     
     const main = document.getElementById("main"); 
+    if (!main) {
+      console.error("Main element not found!");
+      return;
+    }
+
     sections.forEach(section => {
       // Creëer sectie-header
       const headDiv = document.createElement("div");
@@ -46,4 +51,4 @@ export function html() {
     
       main.appendChild(sectionContainer); // Voegt uiteindelijk alles toe
     });
-}
+} 
