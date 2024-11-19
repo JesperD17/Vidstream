@@ -1,9 +1,9 @@
 
 // console loggen API of error aangeven
-import { showSlides } from './slideshowButton.js';
-import { htmlStructure } from './html_Optamized.js';
-import { loader } from './loader.js';
-import { remover } from './stylesheetRemover.js';
+import { fullTimer } from './slideshowButton.js';
+import { htmlStructure } from './allPagesJs/html_Optamized.js';
+import { loader } from './skeletonJs/loader.js';
+import { remover } from './allPagesJs/stylesheetRemover.js';
 // import { pauseLoader } from './loader.js';
 let url = 'https://vidstream-api.vercel.app/home';
 
@@ -105,12 +105,12 @@ function fStart() {
         });
 
         
-        document.querySelector(".output").innerHTML += html;
+        document.querySelector(".output.cards").innerHTML += html;
         // slideshowButton.js
         
         setTimeout(() => { 
             // buttonsClick(); 
-            showSlides();
+            fullTimer();
             
         }, 1)
     }

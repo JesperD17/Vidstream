@@ -63,7 +63,7 @@
 </body>
 </html>
 
-<script src="../js/skeleton.js"></script>
+<script src="../js/skeletonJs/skeleton.js"></script>
 <!-- <script src="../js/html_Optamized.js"></script> -->
 
 <!-- <script src="../js/loader.js"></script> -->

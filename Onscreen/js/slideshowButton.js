@@ -1,8 +1,9 @@
 let slideIndex = 0;
 let slideTime;
 
-export function showSlides() {
-  function slide(left = false) {
+// function showSlidesAndButtons() {
+export function fullTimer() {
+  function slideTimer(left = false) {
     // shows next image
       
       let i;
@@ -18,32 +19,28 @@ export function showSlides() {
       if (slideIndex < 1) {
         slideIndex = slides.length;
       }
-    } else {
+    } 
+    else {
       slideIndex++;
       
       if (slideIndex > slides.length) {
         slideIndex = 1;
       }
     }
-      
-      // slides[slideIndex - 1].style.display = "block"; // shows ++ card evert change
       slides[slideIndex - 1].classList.add("active_style_slide");
 
-      slideTime = setTimeout(slide, 3000); // changing seconds
+      slideTime = setTimeout(slideTimer, 3000); // changing seconds
   }
-
-
-
-  // timer
+  // restart timer
   clearTimeout(slideTime);
-  slide();
+  slideTimer();
+}
 
-
-  // // button detect click, changes image
+  // button detect click, changes image
   const left = document.querySelector('.slide_left');
   const right = document.querySelector('.slide_right');
   const allImages = document.querySelector('.slide-Card');
-  // console.log(left, right, allImages)
+  console.log(left, right, allImages)
 
   left.addEventListener('click', () => {
     console.log('links');
@@ -61,4 +58,4 @@ export function showSlides() {
 
 
 
-}
+// }
